@@ -30,6 +30,8 @@ const FinishLine = () => {
   );
 };
 
+import ControlButtons from "./ControlButtons.jsx";
+
 const Index = () => {
   return (
     <VStack spacing={4} p={4}>
@@ -46,7 +48,9 @@ const Index = () => {
         {/* Static Finish Line */}
         <FinishLine />
       </Box>
-      <Text>Use mobile touch controls to play (Not implemented)</Text>
+      <Text>Use mobile touch controls to play</Text>
+      {/* Control Buttons */}
+      <ControlButtons />
     </VStack>
   );
 };
